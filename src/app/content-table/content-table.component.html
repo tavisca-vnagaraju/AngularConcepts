@@ -1,0 +1,18 @@
+<div class="input-box">
+    <input type="text" placeholder="Enter Text" (keyup)="onKeyUp($event)" value="{{clickedButtonName}}">
+</div>
+<div class="content-table" >
+    <h2 class="center"> {{clickedButtonName}} Details </h2>
+    <table>
+        <tr>
+            <th>Developer</th>
+            <th>Management</th>
+            <th>Bussiness</th>
+        </tr>
+        <tr *ngFor="let employe of employeDetails">
+            <td *ngIf="(clickedButtonName|lowercase)==employe.tribename"> <p>{{employe.developers[0].name}}</p> <p>{{employe.developers[0].designation}}</p> </td>
+            <td *ngIf="(clickedButtonName|lowercase)==employe.tribename"> <p>{{employe.developers[1].name}}</p> <p>{{employe.developers[1].designation}}</p> </td>
+            <td *ngIf="(clickedButtonName|lowercase)==employe.tribename"> <p>{{employe.developers[2].name}}</p> <p>{{employe.developers[2].designation}}</p> </td>
+        </tr>
+    </table>
+</div>

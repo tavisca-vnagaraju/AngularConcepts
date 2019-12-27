@@ -1,0 +1,22 @@
+button:focus{
+    outline: transparent;
+}
+button:hover{
+    background-color: #d9534fed;
+}
+button{
+    padding: 15px;
+    width: 120px;
+    font-size: 14px;
+    /* border-radius: 10px; */
+    /* margin: 5px; */
+    font-weight: 600;
+    color: black;
+    background-color: #d9534f;
+}
+.flex-container{
+    display: flex;
+}
+.flex-item{
+    flex: 1;
+}

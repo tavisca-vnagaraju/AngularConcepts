@@ -1,0 +1,14 @@
+<p>drag-and-drop works! {{fileHandlesArray.length}}</p>
+<div class="col-12 rmpm dropzone" appDrag (files)="filesDropped($event)">
+	<div class="text-wrapper">
+		<div class="centered">Drop your file here!</div>
+	</div>
+</div>
+<!--droped image preview-->
+<div *ngFor="let files of fileHandlesArray">
+	<div *ngFor="let file of files">
+	  <img *ngIf="file" [src]="file.url" width="100px" height="100px">
+	</div>
+</div>
+
+<button type="button" (click)="upload()">Upload Image</button>

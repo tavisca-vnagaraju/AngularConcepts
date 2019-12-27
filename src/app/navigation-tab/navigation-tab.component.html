@@ -1,0 +1,4 @@
+<div class="flex-container">
+    <button *ngFor="let buttonName of buttonNames" class="flex-item" (click)="onButtonClick(buttonName)">{{buttonName}}</button>
+</div>
+<app-content-table *ngIf="isButtonClicked" [clickedButtonName]="clickedButtonName" (changedButtonNameEvent)="receiveMessage($event)"></app-content-table>

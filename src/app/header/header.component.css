@@ -1,0 +1,24 @@
+.toolbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+}
+.toolbar h1{
+    padding: 10px;
+}
+.link-box{
+    text-align: right;
+    width: 100%;
+    padding: 12px;
+}
+.link{
+    color: white;
+    padding: 10px;
+    text-decoration-line: none;
+}
+.link:hover{
+    color: #dad8d8;
+}
