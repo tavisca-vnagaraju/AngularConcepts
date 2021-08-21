@@ -8,11 +8,11 @@ import { ProductsService } from '../products.service';
 })
 export class ContentTableComponent implements OnInit {
   ngOnInit(): void {
-    // this.employeDetails = this.productsService.getEmployeDetails();
-    this.productsService.getEmployeDetailsFromApi().subscribe(
-      (response) => this.employeDetails=response,
-      (error) => console.log(error)
-    );
+    this.employeDetails = this.productsService.getEmployeDetails();
+    // this.productsService.getEmployeDetailsFromApi().subscribe(
+    //   (response) => this.employeDetails=response,
+    //   (error) => console.log(error)
+    // );
   }
   @Input() clickedButtonName: string;
   @Output() changedButtonNameEvent = new EventEmitter<string>();

@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent , data: { title: 'Hello From Contact Component' }},
   { path: 'about/:myParams', component: AboutComponent },
+  { path: 'notFound', component: PageNotFoundComponent } ,
   { path: '**', component: PageNotFoundComponent }
 
 ];
